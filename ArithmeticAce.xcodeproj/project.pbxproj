@@ -50,9 +50,9 @@
 			isa = PBXGroup;
 			children = (
 				81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */,
+				81FDA62A27B160FF002471AE /* ArithmeticAce */,
 				C15307D827B42514008F061F /* Animations */,
 				C15307D127B422CD008F061F /* Views */,
-				81FDA62A27B160FF002471AE /* ArithmeticAce */,
 				81FDA62927B160FF002471AE /* Products */,
 			);
 			sourceTree = "<group>";

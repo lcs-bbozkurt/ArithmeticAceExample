@@ -118,6 +118,15 @@ struct AdditionView: View {
                 
             }
             
+            // Reaction animation
+            LottieView(animationNamed: "51926-happy")
+                .padding()
+                .opacity(answerCorrect == true ? 1.0 : 0.0)
+            // Reaction animation two
+            LottieView(animationNamed: "28432-emoji-sad")
+                .padding()
+                .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
+            
             Spacer()
         }
         .padding(.horizontal)

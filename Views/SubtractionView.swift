@@ -10,8 +10,8 @@ import SwiftUI
 struct SubtractionView: View {
     
     // MARK: Stored properties
-    @State var minuend = Int.random(in: 1...12)
-    @State var subtrahend = Int.random(in: 1...12)
+    @State var minuend = Int.random(in: 1...144)
+    @State var subtrahend = 0
     
     // This string contains whatever the user types in
     @State var inputGiven = ""
@@ -122,7 +122,10 @@ struct SubtractionView: View {
         }
         .padding(.horizontal)
         .font(.system(size: 72))
-        
+        // Closure (block of code will run once when the view is loaded)
+        .task {
+            subtrahend = Int.random(in: 1...minuend)
+        }
         
     }
 }

@@ -12,7 +12,7 @@ struct DivisionView: View {
     // MARK: Stored properties
     @State var correctQuotient = Int.random(in: 1...12)
     @State var divisor = Int.random(in: 1...12)
-
+    
     // This string contains whatever the user types in
     @State var inputGiven = ""
     
@@ -26,7 +26,7 @@ struct DivisionView: View {
     // What is the dividend, based on the randomly generated divisor and quotient?
     var dividend: Int {
         return correctQuotient * divisor
-    
+    }
     var body: some View {
         
         VStack(spacing: 0) {
@@ -99,7 +99,7 @@ struct DivisionView: View {
                     // Generate a new question
                     correctQuotient = Int.random(in: 1...12)
                     divisor = Int.random(in: 1...12)
-
+                    
                     // Reset properties that track what's happening with the current question
                     answerChecked = false
                     answerCorrect = false
@@ -116,7 +116,7 @@ struct DivisionView: View {
                     .opacity(answerChecked == true ? 1.0 : 0.0)
                 
             }
-                        
+            
             Spacer()
         }
         .padding(.horizontal)
@@ -125,6 +125,7 @@ struct DivisionView: View {
         
     }
 }
+
 
 struct DivisionView_Previews: PreviewProvider {
     static var previews: some View {

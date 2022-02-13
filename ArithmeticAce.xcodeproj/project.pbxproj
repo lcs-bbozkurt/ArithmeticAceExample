@@ -49,8 +49,8 @@
 		81FDA61F27B160FF002471AE = {
 			isa = PBXGroup;
 			children = (
-				81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */,
 				81FDA62A27B160FF002471AE /* ArithmeticAce */,
+				81FDA63127B16100002471AE /* Preview Content */,
 				C15307D827B42514008F061F /* Animations */,
 				C15307D127B422CD008F061F /* Views */,
 				81FDA62927B160FF002471AE /* Products */,
@@ -68,8 +68,7 @@
 		81FDA62A27B160FF002471AE /* ArithmeticAce */ = {
 			isa = PBXGroup;
 			children = (
-				81FDA62F27B16100002471AE /* Assets.xcassets */,
-				81FDA63127B16100002471AE /* Preview Content */,
+				81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */,
 			);
 			path = ArithmeticAce;
 			sourceTree = "<group>";
@@ -77,6 +76,7 @@
 		81FDA63127B16100002471AE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				81FDA62F27B16100002471AE /* Assets.xcassets */,
 				81FDA63227B16100002471AE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";

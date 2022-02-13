@@ -98,8 +98,8 @@ struct SubtractionView: View {
                 
                 Button(action: {
                     // Generate a new question
-                    minuend = Int.random(in: 1...12)
-                    subtrahend = Int.random(in: 1...12)
+                    minuend = Int.random(in: 1...144)
+                    subtrahend = Int.random(in: 1...minuend)
                     
                     // Reset properties that track what's happening with the current question
                     answerChecked = false
